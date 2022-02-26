@@ -1,0 +1,13 @@
+.iconList{
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.copyRightText{
+    display: inline-block;
+}
+
+.image{
+    margin: 0 8px;
+}

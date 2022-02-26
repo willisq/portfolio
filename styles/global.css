@@ -1,0 +1,27 @@
+@font-face {
+    font-family: texto;
+    src: url('../public/asset/texto.TTF');
+}
+
+@font-face {
+    font-family: titulo;
+    src: url('../public/asset/titulos.ttf');
+}
+html{
+    scroll-behavior: smooth;
+}
+
+p,li,span,a,h2,h3,h4,h5,h6{
+    font-family: texto;
+}
+h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+
+h1{
+    font-family: titulo;
+}
+
+.container{
+    max-width: 1000px;
+}

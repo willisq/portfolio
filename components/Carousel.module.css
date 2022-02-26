@@ -1,0 +1,46 @@
+.embla {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  --buttonDistance: 12px;
+}
+.embla__container {
+  display: flex;
+  height: 100%;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+
+.button {
+  position: absolute;
+  top: calc(50% - 10px);
+}
+
+.left{
+  left: var(--buttonDistance);
+}
+
+.right{
+  right: var(--buttonDistance);
+}
+
+.dotContainer{
+  position: absolute;
+  width: 100%;
+  bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dot{
+  width: 32px;
+  height: 4px;
+  margin: 0 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+

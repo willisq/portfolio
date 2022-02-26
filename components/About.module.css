@@ -1,0 +1,53 @@
+.resumeDescription{
+    text-align: justify;
+}
+
+.listGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.noMargin{
+    margin:  0;
+}
+
+.sectionMargin{
+    margin: 1.9466666667rem 0 1.168rem 0;;
+}
+.mediaInfo{
+    padding: 4px 0px;
+    border-radius: 4px;
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.mediaInfo:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+@media (max-width: 900px) {
+    .mediaInfo{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 320px) {
+    .mediaInfo{
+        font-size: 14px;
+    }
+
+    .listGroup{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .listGroup{
+        flex-direction: column;
+    }
+}
+
+
