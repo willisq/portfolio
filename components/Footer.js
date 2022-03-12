@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./Footer.module.css";
 export default function Footer(props) {
   let links = <LinkList links={props.links} linksClassName="white-text" />;
-  console.log(props.icons);
   let icon = (
     <ul className={`right col s8 ${styles.iconList}`}>
       {props.icons.map((option, index) => {

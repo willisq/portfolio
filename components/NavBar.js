@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, forwardRef } from "react";
 import LinkList from "./LinksList";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 
-export default function NavBar(props) {
+export default forwardRef((props, ref)=> {
   let dropdowns, dropdownsSide;
   useEffect(() => {
     import("materialize-css").then((M) => {
@@ -35,22 +35,23 @@ export default function NavBar(props) {
 
   return (
     <>
-      <nav
-        className={`${styles.navbarWrapper} ${props.color} ${
+      <nav ref={ref}
+        className={`z-depth-0 ${styles.navbarWrapper} ${props.color}  ${
           props.color + props.extended ? "nav-extended" : ""
         }`}
       >
         <div className="nav-wrapper">
           <Link href="/">
-            <a className={`brand-logo ${styles.logo}`}>{props.logo}</a>
+            <a className={`brand-logo ${props.textColor} ${styles.logo}`}>{props.logo}</a>
           </Link>
-          <a href="#" data-target="mobile-demo" className="sidenav-trigger">
-            <i className="material-icons ">menu</i>
+          <a href="#" data-target="mobile-demo"  className="sidenav-trigger">
+            <i className={`material-icons ${props.textColor}`} >menu</i>
           </a>
           <LinkList
             active={props.active}
             className="right hide-on-med-and-down"
             links={props.links}
+            linksClassName = {props.textColor}
           />
         </div>
         {props.children}
@@ -60,4 +61,4 @@ export default function NavBar(props) {
       <LinkList side className="sidenav" id="mobile-demo" links={props.links} />
     </>
   );
-}
+});

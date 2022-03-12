@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
-p,li,span,a,h2,h3,h4,h5,h6{
+/* p,li,span,a,h2,h3,h4,h5,h6{
     font-family: texto;
 }
 h2,h3,h4,h5,h6{
@@ -20,7 +20,7 @@ h2,h3,h4,h5,h6{
 
 h1{
     font-family: titulo;
-}
+} */
 
 .container{
     max-width: 1000px;
