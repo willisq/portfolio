@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Hero from "../components/hero";
+import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import About from "../components/About";
 import { useEffect,useRef, useState } from "react";
