@@ -2,7 +2,7 @@ import styles from "./Hero.module.css";
 import Image from "next/image";
 import { forwardRef } from "react";
 
-export default forwardRef((props,ref)=> {
+const Hero = forwardRef((props,ref)=> {
   return (
     <main ref = {ref} className={`hero ${styles.heroContainer}`}>
       <div className={styles.imageBg}>
@@ -39,3 +39,6 @@ export default forwardRef((props,ref)=> {
     </main>
   );
 });
+Hero.displayName = "Hero";
+
+export default  Hero;

@@ -1,9 +1,9 @@
 import styles from "./Work.module.css";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 
-export default function About(props) {
-  const textColor = "grey-text text-darken-2";
+export default function About() {
   useEffect(() => {
     import("materialize-css").then((M) => {
       const collapsible = document.querySelector(".collapsible.popup");
@@ -28,7 +28,7 @@ export default function About(props) {
                 I worked as a frontend developer with a team to develop a web
                 application to make virtual classrooms using html, css, javascript
                 and Socket.io. <br />I developed the frontend of the website of
-                Insiemp's client educational institutions.
+                Insiemp&apos;s client educational institutions.
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function About(props) {
                 <div className="collapsible-body no-padding">
                   <div className="card z-depth-0">
                     <div className="card-image">
-                      <img src="/img/portfolio.png" />
+                      <Image src="/img/portfolio.png" alt="portfolio" layout="fill" />
                     </div>
                     <div className="card-stacked">
                       <div className="card-content">
@@ -60,7 +60,7 @@ export default function About(props) {
                 <div className="collapsible-body no-padding">
                   <div className="card z-depth-0">
                     <div className="card-image">
-                      <img src="/img/calculator.png" />
+                      <Image src="/img/calculator.png" layout="fill" alt="" />
                     </div>
                     <div className="card-stacked">
                       <div className="card-content">

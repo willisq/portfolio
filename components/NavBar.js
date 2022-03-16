@@ -3,7 +3,7 @@ import LinkList from "./LinksList";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 
-export default forwardRef((props, ref)=> {
+const NavBar = forwardRef((props, ref)=> {
   let dropdowns, dropdownsSide;
   useEffect(() => {
     import("materialize-css").then((M) => {
@@ -62,3 +62,5 @@ export default forwardRef((props, ref)=> {
     </>
   );
 });
+NavBar.displayName="NavBar";
+export default  NavBar;

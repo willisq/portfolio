@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Contact.module.css";
-export default (props) => {
+export default function contact(props){
   return (
     <div name = "Contact" className="container">
       <div className="row">
@@ -10,7 +10,7 @@ export default (props) => {
         </div>
         <div className="col s12 l6 pull-l6 no-padding">
           <h6>Contact</h6>
-          <h2 className="header">Let's Work together</h2>
+          <h2 className="header">Let&apos;s Work together</h2>
           <p>
             Got a project? Send me a email if you want to work together on
             something exciting. Big or small.

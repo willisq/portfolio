@@ -22,7 +22,7 @@ export default function Footer(props) {
   return (
     <>
       <div className={styles.footerContainer}>
-        <Image src="/img/footer-wave.svg" layout="fill" />
+        <Image src="/img/footer-wave.svg" layout="fill" alt="" />
         <footer className={`page-footer ${props.color} ${styles.footer}`}>
           <div className="container">
             <div className="row">
