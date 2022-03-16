@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/404.module.css";
-export default function(){
+export default function Get404(){
   return (
       <div className="container section">
         <h6 className="center-align">Oops!</h6>
