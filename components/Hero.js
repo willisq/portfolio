@@ -1,10 +1,11 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import { forwardRef } from "react";
+import Link from "next/link";
 
-const Hero = forwardRef((props,ref)=> {
+const Hero = forwardRef((props, ref) => {
   return (
-    <main ref = {ref} className={`hero ${styles.heroContainer}`}>
+    <main ref={ref} className={`hero ${styles.heroContainer}`}>
       <div className={styles.imageBg}>
         <Image
           priority
@@ -14,7 +15,7 @@ const Hero = forwardRef((props,ref)=> {
           src="/img/hero-wave-small.svg"
         />
         <Image
-        priority
+          priority
           className={styles.wave}
           alt={props.alt ? props.alt : ""}
           layout="fill"
@@ -28,9 +29,13 @@ const Hero = forwardRef((props,ref)=> {
           {props.description ? (
             <p className="flow-text">{props.description}</p>
           ) : null}
-          <a className={`waves-effect yellow black-text waves-light btn ${styles.button}`}>
-            Contact Me
-          </a>
+          <Link href="mailto: williamsuarezdev@gmail.com">
+            <a
+              className={`waves-effect yellow black-text waves-light btn ${styles.button}`}
+            >
+              Contact Me
+            </a>
+          </Link>
         </div>
         <div className={styles.primaryImage}>
           <img src={props.primaryImage} />
@@ -41,4 +46,4 @@ const Hero = forwardRef((props,ref)=> {
 });
 Hero.displayName = "Hero";
 
-export default  Hero;
+export default Hero;
