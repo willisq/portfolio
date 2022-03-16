@@ -2,19 +2,6 @@
     text-align: justify;
 }
 
-.waveAbout, .waveWork{
-    position: relative;
-    left: 0vw;
-    width: 100%;
-}
-.waveAbout{
-    height:400px;
-}
-
-.waveWork{
-    height:300px;
-}
-
 .listGroup{
     display: flex;
     flex-direction: row;

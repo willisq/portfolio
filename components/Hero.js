@@ -7,12 +7,14 @@ export default forwardRef((props,ref)=> {
     <main ref = {ref} className={`hero ${styles.heroContainer}`}>
       <div className={styles.imageBg}>
         <Image
+          priority
           className={styles.waveSmall}
           alt={props.alt ? props.alt : ""}
           layout="fill"
           src="/img/hero-wave-small.svg"
         />
         <Image
+        priority
           className={styles.wave}
           alt={props.alt ? props.alt : ""}
           layout="fill"

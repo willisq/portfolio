@@ -8,7 +8,11 @@ const Layout = ({ active, textColor, children }) => {
       title: "About",
     },
     {
-      link: "mailto: williamsuarezdev@gmail.com",
+      link: "#Work",
+      title: "Work"
+    },
+    {
+      link: "#Contact",
       title: "Contact",
     },
   ];

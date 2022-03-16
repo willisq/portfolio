@@ -1,3 +1,14 @@
+.footerContainer{
+    position: relative;
+    height: 450px;
+    width: 100%;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom:0;
+}
 .iconList{
     display:inline-flex;
     flex-direction: row;

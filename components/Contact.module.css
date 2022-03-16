@@ -1,0 +1,12 @@
+.imageContainer{
+    position: relative;
+    height: 100vh;
+    max-height: 520px;
+    min-height: 200px;
+}
+
+.svg{
+    margin-right: 12px;
+}
+
+

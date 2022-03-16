@@ -1,7 +1,8 @@
-import Head from "next/head";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import About from "../components/About";
+import Work from "../components/Work";
+import Contact from "../components/Contact";
 import { useEffect,useRef, useState } from "react";
 export default function Home() {
   const [textColor, setTextColor] = useState('white-text');
@@ -30,9 +31,9 @@ export default function Home() {
   return (
     <Layout textColor = {textColor}> 
         <Hero ref = {containerRef} primaryImage = "/img/programmer.svg" title="Hi! I’m William Suárez" subTitle="Full Stack Web Developer" description ="High level experience in web development knowledge, producing quality work."/>
-        <div className="container">
           <About/>
-        </div>
+          <Work/>
+          <Contact/>
     </Layout>
   );
 }

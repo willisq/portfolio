@@ -11,7 +11,7 @@ export default function Footer(props) {
           <li key={"icon" + index}>
             <Link href={option.link}>
               <a className={styles.image}>
-                <Image alt= "" src={option.iconSrc} height="24" width="24" />
+                <Image alt="" src={option.iconSrc} height="24" width="24" />
               </a>
             </Link>
           </li>
@@ -20,29 +20,39 @@ export default function Footer(props) {
     </ul>
   );
   return (
-    <footer className={`page-footer ${props.color}`}>
-      <div className="container">
-        <div className="row">
-          <div className="col l6 s12">
-            <h5 className="white-text">{props.title}</h5>
-            <p className="grey-text text-lighten-4">
-              You can use rows and columns here to organize your footer content.
-            </p>
+    <>
+      <div className={styles.footerContainer}>
+        <Image src="/img/footer-wave.svg" layout="fill" />
+        <footer className={`page-footer ${props.color} ${styles.footer}`}>
+          <div className="container">
+            <div className="row">
+              <div className="col l6 s12">
+                <h5 className="white-text">{props.title}</h5>
+                <p className="grey-text text-lighten-4">
+                  Feel free to reach out to me any time
+                </p>
+                <Link href="mailto: williamsuarezdev@gmail.com">
+                  <a className="flow-text white-text">
+                    williamsuarezdev@gmail.com
+                  </a>
+                </Link>
+              </div>
+              <div className="col l4 offset-l2 s12">
+                <h5 className="white-text">{props.sectionsTitle}</h5>
+                {links}
+              </div>
+            </div>
           </div>
-          <div className="col l4 offset-l2 s12">
-            <h5 className="white-text">{props.sectionsTitle}</h5>
-            {links}
+          <div className="footer-copyright">
+            <div className="container">
+              <div className="row valign-wrapper">
+                <p className="col s4">{props.copyRightText}</p>
+                {icon}
+              </div>
+            </div>
           </div>
-        </div>
+        </footer>
       </div>
-      <div className="footer-copyright">
-        <div className="container">
-          <div className="row valign-wrapper">
-            <p className="col s4">{props.copyRightText}</p>
-            {icon}
-          </div>
-        </div>
-      </div>
-    </footer>
+    </>
   );
 }
