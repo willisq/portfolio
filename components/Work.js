@@ -40,7 +40,7 @@ export default function About() {
                 <div className="collapsible-body no-padding">
                   <div className="card z-depth-0">
                     <div className="card-image">
-                      <Image src="/img/portfolio.png" alt="portfolio" layout="fill" />
+                      <img src="/img/portfolio.png" loading="lazy" alt="portfolio" />
                     </div>
                     <div className="card-stacked">
                       <div className="card-content">
@@ -60,7 +60,7 @@ export default function About() {
                 <div className="collapsible-body no-padding">
                   <div className="card z-depth-0">
                     <div className="card-image">
-                      <Image src="/img/calculator.png" layout="fill" alt="" />
+                      <img src="/img/calculator.png" loading="lazy" alt="" />
                     </div>
                     <div className="card-stacked">
                       <div className="card-content">
